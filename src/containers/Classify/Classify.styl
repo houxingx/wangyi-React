@@ -1,0 +1,65 @@
+@import "../../assets/css/mixins.styl"
+.container
+  width 100%
+  height 100%
+  padding-top 45px
+  padding-bottom 50px
+  box-sizing border-box
+  .header
+    position fixed
+    top 0
+    left 0
+    box-sizing border-box
+    height 44px
+    width 100%
+    background #fff
+    padding 8px 15px 0 15px
+    z-index 200
+    overflow hidden
+    border-bottom 1px solid #d9d9d9
+    .item
+      box-sizing border-box
+      line-height 28px
+      width 100%
+      height 28px
+      background #ededed
+      text-align center
+      color #333
+      border-radius 3px
+      span
+        margin-left 2px
+        font-size 13px
+        color #666
+        letter-spacing 0.5px
+  .goodCart
+    position fixed
+    top 44px
+    left 0
+    width 81px
+    height 580px
+    border-right  1px solid #d9d9d9
+    .ulList
+      position absolute
+      top 0
+      left 0
+      width 100%
+      height 100%
+      ul
+        width 100%
+        padding-bottom 25px
+        display flex
+        flex-direction column
+        li
+          width 100%
+          height 25px
+          margin-top 20px
+          text-align center
+          line-height 25px
+          a
+            color #333
+            font-size 14px
+          &.on
+            left-border-1px(red,3px)
+            a
+              color red
+
